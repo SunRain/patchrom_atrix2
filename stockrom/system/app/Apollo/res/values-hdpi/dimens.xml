@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="half_and_half_image_height">130.0dip</dimen>
-    <dimen name="gridview_image_height">148.0dip</dimen>
-    <dimen name="gridview_item_ccontainer_height">54.0dip</dimen>
-</resources>

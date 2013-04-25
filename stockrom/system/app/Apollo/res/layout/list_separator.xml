@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:paddingLeft="@dimen/list_separator_container_padding_left" android:paddingRight="@dimen/fast_scroll_padding_right" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/title" style="@style/SeparatorTextViewStyle" />
-</FrameLayout>

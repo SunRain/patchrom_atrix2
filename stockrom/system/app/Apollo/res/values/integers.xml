@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="viewpager_margin_width">30</integer>
-    <integer name="listview_album_art">133</integer>
-    <integer name="peak">200</integer>
-    <integer name="gridview_columns">2</integer>
-    <integer name="listview_padding_left">16</integer>
-    <integer name="listview_padding_right">32</integer>
-</resources>

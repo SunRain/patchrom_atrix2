@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/shadow" />
-    <GridView android:id="@id/gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="true" android:cacheColorHint="@color/transparent" android:numColumns="@integer/gridview_columns" android:layout_weight="1.0" />
-    <include layout="@layout/empty_view" />
-</LinearLayout>
