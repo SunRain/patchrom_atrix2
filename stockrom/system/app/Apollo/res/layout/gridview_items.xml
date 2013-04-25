@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gridview_image" android:layout_width="@dimen/gridview_image_width" android:layout_height="@dimen/gridview_image_height" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/gridview_info_holder" android:background="@color/transparent_black" android:paddingLeft="@dimen/gridview_item_ccontainer_padding_left" android:paddingRight="@dimen/gridview_item_ccontainer_padding_right" android:layout_width="@dimen/gridview_image_width" android:layout_height="@dimen/gridview_item_ccontainer_height" android:layout_alignParentBottom="true">
+        <TextView android:textStyle="bold" android:id="@id/gridview_line_one" style="@style/GridViewTextItem" />
+        <TextView android:id="@id/gridview_line_two" style="@style/GridViewTextItem" />
+    </LinearLayout>
+    <ImageView android:id="@id/peak_one" android:paddingRight="@dimen/peak_meter_one_padding_right" android:paddingBottom="@dimen/peak_meter_padding_bottom" android:layout_alignParentBottom="true" style="@style/PeakMeter" />
+    <ImageView android:id="@id/peak_two" android:paddingRight="@dimen/peak_meter_two_padding_right" android:paddingBottom="@dimen/peak_meter_padding_bottom" android:layout_alignParentBottom="true" style="@style/PeakMeter" />
+</RelativeLayout>

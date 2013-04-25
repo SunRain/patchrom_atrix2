@@ -1,0 +1,13 @@
+# mount point   fstype          device
+
+# recovery refers to external memory(sdcard) with /sdcard path. So using that here instead of /sdcard-ext
+/sdcard         vfat            /dev/block/mmcblk0p1    /dev/block/mmcblk0
+/system         ext3            /dev/block/mmcblk1p21
+/cache          ext3            /dev/block/mmcblk1p22
+/data           ext3            /dev/block/mmcblk1p25
+/misc           mtd             misc
+/boot           mtd             boot
+/recovery       mtd             recovery
+/pds            ext3            /dev/block/mmcblk1p7
+/preinstall     ext3            /dev/block/mmcblk1p23
+/webtop	        ext3            /dev/block/mmcblk1p24

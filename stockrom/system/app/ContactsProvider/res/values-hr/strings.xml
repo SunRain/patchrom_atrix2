@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">Matične aplikacije za Android</string>
+    <string name="app_label">Prostor za pohranu kontakata</string>
+    <string name="provider_label">Kontakti</string>
+    <string name="upgrade_msg">Nadogradnja baze podataka kontakata.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">Za nadogradnju kontakata potrebno je više memorije.</string>
+    <string name="upgrade_out_of_memory_notification_title">Nadogradnja pohrane za kontakte</string>
+    <string name="upgrade_out_of_memory_notification_text">Dodirnite da biste dovršili nadogradnju.</string>
+    <string name="default_directory">Kontakti</string>
+    <string name="local_invisible_directory">Drugo</string>
+    <string name="read_write_all_voicemail_label">Pristup svoj govornoj pošti</string>
+    <string name="read_write_all_voicemail_description">Aplikaciji omogućuje pohranjivanje i dohvaćanje svih poruka govorne pošte kojoj ovaj uređaj može pristupati.</string>
+    <string name="voicemail_from_column">"Govorna pošta od "</string>
+</resources>

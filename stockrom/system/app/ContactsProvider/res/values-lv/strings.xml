@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">Android Core Apps</string>
+    <string name="app_label">Kontaktpersonu krātuve</string>
+    <string name="provider_label">Kontaktpersonas</string>
+    <string name="upgrade_msg">Notiek kontaktpersonu datu bāzes jaunināšana.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">Lai jauninātu kontaktpersonas, nepieciešams vairāk vietas atmiņā.</string>
+    <string name="upgrade_out_of_memory_notification_title">Notiek kontaktpersonu krātuves jaunināšana</string>
+    <string name="upgrade_out_of_memory_notification_text">Pieskarieties, lai pabeigtu jaunināšanu.</string>
+    <string name="default_directory">Kontaktpersonas</string>
+    <string name="local_invisible_directory">Cits</string>
+    <string name="read_write_all_voicemail_label">Piekļuve visiem balss pasta ziņojumiem</string>
+    <string name="read_write_all_voicemail_description">Ļauj lietotnei glabāt un izgūt visus balss pasta ziņojumus, kuriem var piekļūt šajā ierīcē.</string>
+    <string name="voicemail_from_column">"Balss pasta ziņojums no "</string>
+</resources>

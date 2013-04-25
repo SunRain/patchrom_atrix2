@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.BrightnessPreference android:title="@string/brightness" android:key="brightness" android:dialogTitle="@string/brightness" />
+    <PreferenceScreen android:title="@string/backlight_title" android:key="backlight_widget" android:summary="@string/backlight_summary" android:fragment="com.android.settings.cyanogenmod.Backlight" />
+    <PreferenceScreen android:title="@string/display_rotation_title" android:key="display_rotation" android:fragment="com.android.settings.cyanogenmod.DisplayRotation" />
+    <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" />
+    <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+    <PreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.settings.DreamSettings" />
+    <PreferenceScreen android:title="@string/notification_pulse_title" android:key="notification_pulse" android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
+    <PreferenceScreen android:title="@string/battery_light_title" android:key="battery_light" android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+    <PreferenceCategory android:title="@string/display_category_wakeup_options_title" android:key="category_wakeup_options" />
+    <CheckBoxPreference android:title="@string/pref_volume_wake_title" android:key="pref_volume_wake" android:summary="@string/pref_volume_wake_summary" android:defaultValue="false" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_action_bar_container" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bottom_action_bar_info_divider" android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_action_bar_divider_height" />
+    <com.andrew.apollo.ui.widgets.BottomActionBar android:orientation="horizontal" android:id="@id/bottom_action_bar" android:background="@drawable/holo_selector" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="left|center" android:id="@id/bottom_action_bar_album_art" android:layout_width="@dimen/bottom_action_bar_album_art_width_height" android:layout_height="@dimen/bottom_action_bar_album_art_width_height" android:scaleType="fitXY" android:contentDescription="@string/cd_bottom_action_bar_album_art" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/bottom_action_bar_info_padding_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textStyle="bold" android:textColor="@color/transparent_black" android:id="@id/bottom_action_bar_track_name" style="@style/BottomActionBarText" />
+            <TextView android:textColor="@color/transparent_black" android:id="@id/bottom_action_bar_artist_name" style="@style/BottomActionBarText" />
+        </LinearLayout>
+        <com.andrew.apollo.ui.widgets.BottomActionBarItem android:id="@id/bottom_action_bar_item_one" android:src="@drawable/apollo_holo_light_favorite_normal" android:contentDescription="@string/cd_favorite" style="@style/BottomActionBarItem" />
+        <com.andrew.apollo.ui.widgets.BottomActionBarItem android:id="@id/bottom_action_bar_item_two" android:src="@drawable/apollo_holo_light_search" android:contentDescription="@string/cd_search" style="@style/BottomActionBarItem" />
+        <com.andrew.apollo.ui.widgets.BottomActionBarItem android:id="@id/bottom_action_bar_item_three" android:src="@drawable/apollo_holo_light_overflow" android:contentDescription="@string/cd_overflow" style="@style/BottomActionBarItem" />
+    </com.andrew.apollo.ui.widgets.BottomActionBar>
+</LinearLayout>

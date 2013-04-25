@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/calendar_title" android:key="lockscreen_calendar" />
+    <MultiSelectListPreference android:title="@string/calendars_title" android:key="lockscreen_calendars" android:summary="@string/calendars_summary" android:dependency="lockscreen_calendar" android:dialogTitle="@string/calendars_title" />
+    <ListPreference android:entries="@array/calendar_lookahead_entries" android:title="@string/calendar_lookahead_title" android:key="lockscreen_calendar_lookahead" android:dependency="lockscreen_calendar" android:dialogTitle="@string/calendar_lookahead_title" android:entryValues="@array/calendar_lookahead_values" />
+    <CheckBoxPreference android:title="@string/calendar_reminders_only_title" android:key="lockscreen_calendar_reminders_only" android:summary="@string/calendar_reminders_only_summary" android:dependency="lockscreen_calendar" />
+    <ListPreference android:entries="@array/calendar_show_event_metadata_entries" android:title="@string/calendar_show_location_title" android:key="lockscreen_calendar_show_location" android:dependency="lockscreen_calendar" android:dialogTitle="@string/calendar_show_location_title" android:entryValues="@array/calendar_show_event_metadata_values" />
+    <ListPreference android:entries="@array/calendar_show_event_metadata_entries" android:title="@string/calendar_show_description_title" android:key="lockscreen_calendar_show_description" android:dependency="lockscreen_calendar" android:dialogTitle="@string/calendar_show_description_title" android:entryValues="@array/calendar_show_event_metadata_values" />
+</PreferenceScreen>

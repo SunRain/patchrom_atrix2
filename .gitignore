@@ -1,0 +1,7 @@
+out/
+tmp/
+tmp-bak/
+bak/
+test/
+stockrom.zip
+.delete-zip-file-when-clean

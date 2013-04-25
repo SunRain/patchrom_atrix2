@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">تطبيقات Android المركزية</string>
+    <string name="app_label">تخزين جهات الاتصال</string>
+    <string name="provider_label">جهات الاتصال</string>
+    <string name="upgrade_msg">جارٍ ترقية قاعدة بيانات جهات الاتصال.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">تتطلب ترقية جهات الاتصال مزيدًا من الذاكرة.</string>
+    <string name="upgrade_out_of_memory_notification_title">ترقية وحدة التخزين لجهات الاتصال</string>
+    <string name="upgrade_out_of_memory_notification_text">المس لإكمال عملية الترقية.</string>
+    <string name="default_directory">جهات الاتصال</string>
+    <string name="local_invisible_directory">غير ذلك</string>
+    <string name="read_write_all_voicemail_label">الوصول إلى جميع رسائل البريد الصوتي</string>
+    <string name="read_write_all_voicemail_description">للسماح للتطبيق بتخزين واسترداد جميع رسائل البريد الصوتي التي يمكن الوصول إليها عبر هذا الجهاز.</string>
+    <string name="voicemail_from_column">"بريد صوتي من "</string>
+</resources>

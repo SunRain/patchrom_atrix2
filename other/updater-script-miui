@@ -1,0 +1,190 @@
+assert(getprop("ro.product.device") == "umts_edison" ||
+       getprop("ro.build.product") == "umts_edison");
+show_progress(0.500000, 0);
+ui_print("Formatting system...");
+unmount("/system");
+format("ext3", "EMMC", "/dev/block/mmcblk1p21", "0");
+ui_print("Installing system files...");
+mount("ext3", "EMMC", "/dev/block/mmcblk1p21", "/system");
+package_extract_dir("system", "/system");
+ui_print("Creating system links...");
+symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("busybox", "/system/bin/[[", "/system/bin/ash",
+        "/system/bin/awk", "/system/bin/base64", "/system/bin/basename",
+        "/system/bin/blkid", "/system/bin/bunzip2", "/system/bin/bzcat",
+        "/system/bin/bzip2", "/system/bin/cal", "/system/bin/chat",
+        "/system/bin/chattr", "/system/bin/chgrp", "/system/bin/chroot",
+        "/system/bin/chrt", "/system/bin/cksum", "/system/bin/clear",
+        "/system/bin/comm", "/system/bin/crond", "/system/bin/crontab",
+        "/system/bin/cut", "/system/bin/depmod", "/system/bin/devmem",
+        "/system/bin/diff", "/system/bin/dirname", "/system/bin/dnsd",
+        "/system/bin/dnsdomainname", "/system/bin/dos2unix", "/system/bin/dpkg",
+        "/system/bin/dpkg-deb", "/system/bin/du", "/system/bin/echo",
+        "/system/bin/egrep", "/system/bin/env", "/system/bin/ether-wake",
+        "/system/bin/expand", "/system/bin/expr", "/system/bin/fakeidentd",
+        "/system/bin/fdflush", "/system/bin/fdformat", "/system/bin/fdisk",
+        "/system/bin/fgrep", "/system/bin/find", "/system/bin/fold",
+        "/system/bin/free", "/system/bin/freeramdisk", "/system/bin/fsck",
+        "/system/bin/fsync", "/system/bin/ftpd", "/system/bin/ftpget",
+        "/system/bin/ftpput", "/system/bin/getopt", "/system/bin/grep",
+        "/system/bin/groups", "/system/bin/gunzip", "/system/bin/head",
+        "/system/bin/hexdump", "/system/bin/hostid", "/system/bin/hostname",
+        "/system/bin/httpd", "/system/bin/hwclock", "/system/bin/ifenslave",
+        "/system/bin/inetd", "/system/bin/inotifyd", "/system/bin/install",
+        "/system/bin/iostat", "/system/bin/ipaddr", "/system/bin/ipcalc",
+        "/system/bin/iplink", "/system/bin/iproute", "/system/bin/iprule",
+        "/system/bin/iptunnel", "/system/bin/killall", "/system/bin/killall5",
+        "/system/bin/less", "/system/bin/logname", "/system/bin/losetup",
+        "/system/bin/lsattr", "/system/bin/lsusb", "/system/bin/lzop",
+        "/system/bin/lzopcat", "/system/bin/microcom", "/system/bin/mkdosfs",
+        "/system/bin/mkfifo", "/system/bin/mkfs.ext2", "/system/bin/mkfs.vfat",
+        "/system/bin/mknod", "/system/bin/modinfo", "/system/bin/modprobe",
+        "/system/bin/more", "/system/bin/mountpoint", "/system/bin/mt",
+        "/system/bin/nameif", "/system/bin/nanddump", "/system/bin/nandwrite",
+        "/system/bin/nc", "/system/bin/nice", "/system/bin/nmeter",
+        "/system/bin/nslookup", "/system/bin/ntpd", "/system/bin/od",
+        "/system/bin/patch", "/system/bin/pgrep", "/system/bin/pidof",
+        "/system/bin/ping6", "/system/bin/pkill", "/system/bin/pmap",
+        "/system/bin/powertop", "/system/bin/printf", "/system/bin/pscan",
+        "/system/bin/pwd", "/system/bin/rdate", "/system/bin/rdev",
+        "/system/bin/readahead", "/system/bin/readlink", "/system/bin/realpath",
+        "/system/bin/reset", "/system/bin/rev", "/system/bin/rfkill",
+        "/system/bin/run-parts", "/system/bin/script",
+        "/system/bin/scriptreplay", "/system/bin/sed", "/system/bin/seq",
+        "/system/bin/setkeycodes", "/system/bin/setlogcons",
+        "/system/bin/setsid", "/system/bin/sha1sum", "/system/bin/sha256sum",
+        "/system/bin/sha512sum", "/system/bin/showkey", "/system/bin/smemcap",
+        "/system/bin/sort", "/system/bin/split", "/system/bin/stat",
+        "/system/bin/strings", "/system/bin/stty", "/system/bin/sum",
+        "/system/bin/sysctl", "/system/bin/tac", "/system/bin/tail",
+        "/system/bin/tar", "/system/bin/tee", "/system/bin/telnet",
+        "/system/bin/telnetd", "/system/bin/tftp", "/system/bin/tftpd",
+        "/system/bin/time", "/system/bin/timeout", "/system/bin/tr",
+        "/system/bin/traceroute", "/system/bin/traceroute6", "/system/bin/tty",
+        "/system/bin/ttysize", "/system/bin/tunctl", "/system/bin/uname",
+        "/system/bin/uncompress", "/system/bin/unexpand", "/system/bin/uniq",
+        "/system/bin/unix2dos", "/system/bin/unlzop", "/system/bin/unzip",
+        "/system/bin/usleep", "/system/bin/uudecode", "/system/bin/uuencode",
+        "/system/bin/vconfig", "/system/bin/vi", "/system/bin/watch",
+        "/system/bin/wc", "/system/bin/wget", "/system/bin/which",
+        "/system/bin/who", "/system/bin/whoami", "/system/bin/whois",
+        "/system/bin/xargs", "/system/bin/zcat",
+        "/system/xbin/busybox");
+symlink("hijack", "/system/bin/logwrapper");
+symlink("mksh", "/system/bin/sh");
+symlink("motobox", "/system/bin/[", "/system/bin/cp",
+        "/system/bin/getconfig", "/system/bin/masterclear",
+        "/system/bin/md5sum", "/system/bin/mkswap", "/system/bin/ptf",
+        "/system/bin/setconfig", "/system/bin/swapoff", "/system/bin/swapon",
+        "/system/bin/test");
+symlink("preinstall", "/system/preinstall");
+symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
+        "/system/bin/chown", "/system/bin/cmp", "/system/bin/date",
+        "/system/bin/dd", "/system/bin/df", "/system/bin/dmesg",
+        "/system/bin/getevent", "/system/bin/getprop", "/system/bin/hd",
+        "/system/bin/id", "/system/bin/ifconfig", "/system/bin/iftop",
+        "/system/bin/insmod", "/system/bin/ioctl", "/system/bin/ionice",
+        "/system/bin/kill", "/system/bin/ln", "/system/bin/log",
+        "/system/bin/ls", "/system/bin/lsmod", "/system/bin/lsof",
+        "/system/bin/mkdir", "/system/bin/mount", "/system/bin/mv",
+        "/system/bin/nandread", "/system/bin/netstat",
+        "/system/bin/newfs_msdos", "/system/bin/notify", "/system/bin/printenv",
+        "/system/bin/ps", "/system/bin/reboot", "/system/bin/renice",
+        "/system/bin/rm", "/system/bin/rmdir", "/system/bin/rmmod",
+        "/system/bin/route", "/system/bin/schedtop", "/system/bin/sendevent",
+        "/system/bin/sendevent2", "/system/bin/setconsole",
+        "/system/bin/setprop", "/system/bin/sleep", "/system/bin/smd",
+        "/system/bin/start", "/system/bin/stop", "/system/bin/sync",
+        "/system/bin/top", "/system/bin/touch", "/system/bin/umount",
+        "/system/bin/uptime", "/system/bin/vmstat", "/system/bin/watchprops",
+        "/system/bin/wipe");
+ui_print("Set permission...");
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 0, 0644, "/system/bin/aplogd");
+set_perm(0, 0, 0644, "/system/bin/atrace");
+set_perm(0, 0, 0644, "/system/bin/audioloop");
+set_perm(0, 0, 0644, "/system/bin/backuptool.functions");
+set_perm(0, 0, 0644, "/system/bin/backuptool.sh");
+set_perm(0, 0, 0644, "/system/bin/bootmenu");
+set_perm(0, 0, 0644, "/system/bin/brcm_patchram_plus");
+set_perm(0, 0, 0644, "/system/bin/camera_test");
+set_perm(0, 0, 0644, "/system/bin/codec");
+set_perm(0, 0, 0644, "/system/bin/compcache");
+set_perm(0, 0, 0644, "/system/bin/content");
+set_perm(0, 0, 0644, "/system/bin/corrupt_gdt_free_blocks");
+set_perm(0, 0, 0644, "/system/bin/decoder");
+set_perm(0, 0, 0644, "/system/bin/dump_image");
+set_perm(0, 0, 0644, "/system/bin/erase_image");
+set_perm(0, 0, 0644, "/system/bin/finalize_release");
+set_perm(0, 0, 0644, "/system/bin/flash_image");
+set_perm(0, 0, 0644, "/system/bin/gdbserver");
+set_perm(0, 0, 0644, "/system/bin/handle_compcache");
+set_perm(0, 0, 0644, "/system/bin/hostapd_cli");
+set_perm(0, 0, 0644, "/system/bin/keystore_cli");
+set_perm(0, 0, 0644, "/system/bin/make_ext4fs");
+set_perm(0, 0, 0644, "/system/bin/mdnsd");
+set_perm(0, 0, 0644, "/system/bin/mkyaffs2image");
+set_perm(0, 0, 0644, "/system/bin/modelid_cfg.sh");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 0, 0644, "/system/bin/parse_hdmi_edid");
+set_perm(0, 3004, 02755, "/system/bin/ping");
+set_perm(0, 0, 0644, "/system/bin/qemu-props");
+set_perm(0, 0, 0644, "/system/bin/qemud");
+set_perm(0, 0, 0644, "/system/bin/radiooptions");
+set_perm(0, 0, 0644, "/system/bin/record");
+set_perm(0, 0, 0644, "/system/bin/recordvideo");
+set_perm(0, 0, 0644, "/system/bin/requestsync");
+set_perm(0, 2000, 06750, "/system/bin/run-as");
+set_perm(0, 0, 0644, "/system/bin/scp");
+set_perm(0, 0, 0644, "/system/bin/set_ext4_err_bit");
+set_perm(0, 0, 0644, "/system/bin/sf2");
+set_perm(0, 0, 0644, "/system/bin/sftp");
+set_perm(0, 0, 0644, "/system/bin/showlease");
+set_perm(0, 0, 0644, "/system/bin/ssh");
+set_perm(0, 0, 0644, "/system/bin/ssh-keygen");
+set_perm(0, 0, 0644, "/system/bin/sshd");
+set_perm(0, 0, 0644, "/system/bin/stagefright");
+set_perm(0, 0, 0644, "/system/bin/start-ssh");
+set_perm(0, 0, 0644, "/system/bin/strace");
+set_perm(0, 0, 0644, "/system/bin/stream");
+set_perm(0, 0, 0644, "/system/bin/sysinit");
+set_perm(0, 0, 0644, "/system/bin/testid3");
+set_perm(0, 0, 0644, "/system/bin/tune2fs");
+set_perm(0, 0, 0644, "/system/bin/uiautomator");
+set_perm_recursive(1002, 1002, 0755, 0440, "/system/etc/bluetooth");
+set_perm(0, 0, 0755, "/system/etc/bluetooth");
+set_perm(1000, 1000, 0640, "/system/etc/bluetooth/auto_pairing.conf");
+set_perm(3002, 3002, 0444, "/system/etc/bluetooth/blacklist.conf");
+set_perm(1002, 1002, 0440, "/system/etc/dbus.conf");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 2000, 0550, "/system/etc/init.goldfish.sh");
+set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
+set_perm(0, 0, 0444, "/system/lib/egl/egl.cfg");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/usr/bin");
+set_perm(0, 0, 0755, "/system/usr/bin");
+set_perm(0, 2000, 0755, "/system/vendor");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/vendor/bin");
+set_perm(0, 2000, 0755, "/system/vendor/lib");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
+set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
+set_perm(0, 2000, 0755, "/system/vendor/lib/egl");
+set_perm(0, 2000, 0755, "/system/vendor/lib/hw");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt/models");
+set_perm(0, 2000, 0755, "/system/xbin");
+set_perm(0, 2000, 0755, "/system/xbin/dexdump");
+set_perm(0, 2000, 0755, "/system/xbin/drm1_func_test");
+set_perm(0, 2000, 0755, "/system/xbin/shelld");
+set_perm(0, 0, 06755, "/system/xbin/su");
+ui_print("Update Boot image...");
+show_progress(0.200000, 0);
+show_progress(0.200000, 10);
+write_raw_image(package_extract_file("boot.img"), "/dev/block/mmcblk1p15");
+show_progress(0.100000, 0);
+mount("ext3", "EMMC", "/dev/block/mmcblk1p25", "/data");
+package_extract_dir("data", "/data");
+set_perm_recursive(1000, 1000, 0755, 0644, "/data/preinstall_apps");
+unmount("/data");
+unmount("/system");

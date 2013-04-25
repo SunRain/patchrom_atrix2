@@ -1,0 +1,23 @@
+#!/sbin/sh
+
+PATH="/system/xbin:/system/bin:/sbin:${PATH}"
+
+# first we setup hijacking
+mv /system/bin/logwrapper /system/bin/logwrapper.bin
+#ln -s hijack /system/bin/logwrapper
+
+[ ! -e /system/bin/bootmenu ] && cp -f /system/bootmenu/binary/bootmenu /system/bin/bootmenu
+ln -s /system/bin/bootmenu /system/bin/logwrapper
+
+#double set the permissions
+busybox chown -hR 0:2000 /system/bin/logwrapper
+busybox chown -hR 0:2000 /system/bin/bootmenu
+chmod 755 /system/bin/bootmenu
+chmod 755 /system/bin/logwrapper
+
+busybox chown -hR 0:2000 /system/bootmenu
+chmod -R 755 /system/bootmenu
+
+# kill off our release utilities (not needed on-system)
+#rm -r -f /system/etc/finalize_release
+rm $0

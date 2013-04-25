@@ -1,0 +1,3 @@
+post-build=MOTO/edison_ATT/:4.1.1_r4/JZO54K/eng.wangguojian.20130412.124841:/
+post-timestamp=1365742203
+pre-device=umts_edison

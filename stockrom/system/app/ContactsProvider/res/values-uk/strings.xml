@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">Android Core Apps</string>
+    <string name="app_label">"Пам'ять контактів"</string>
+    <string name="provider_label">Контакти</string>
+    <string name="upgrade_msg">Оновлення бази даних контактів.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">Оновлення контактів потребує більше пам’яті.</string>
+    <string name="upgrade_out_of_memory_notification_title">Оновлення пам’яті для контактів</string>
+    <string name="upgrade_out_of_memory_notification_text">Торкніться, щоб завершити оновлення.</string>
+    <string name="default_directory">Контакти</string>
+    <string name="local_invisible_directory">Інші</string>
+    <string name="read_write_all_voicemail_label">Доступ до всієї голосової пошти</string>
+    <string name="read_write_all_voicemail_description">Дозволяє програмі зберігати й отримувати всю голосову пошту, доступ до якої має цей пристрій.</string>
+    <string name="voicemail_from_column">"Голосова пошта від "</string>
+</resources>

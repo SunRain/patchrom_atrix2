@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_black">#99000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="queue_callout_line">#99ffffff</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">Core Apps ng Android</string>
+    <string name="app_label">Imbakan ng Mga Contact</string>
+    <string name="provider_label">Mga Contact</string>
+    <string name="upgrade_msg">Ina-upgrade ang database ng mga contact.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">Nangangailangan ng higit pang memory ang pag-upgrade sa mga contact.</string>
+    <string name="upgrade_out_of_memory_notification_title">Ina-upgrade ang storage para sa mga contact</string>
+    <string name="upgrade_out_of_memory_notification_text">Pindutin upang kumpletuhin ang pag-upgrade.</string>
+    <string name="default_directory">Mga Contact</string>
+    <string name="local_invisible_directory">Iba pa</string>
+    <string name="read_write_all_voicemail_label">I-access ang lahat ng voicemail</string>
+    <string name="read_write_all_voicemail_description">Binibigyang-daan ang app upang iimbak at kuning muli ang lahat ng voicemail na naa-access ng device na ito.</string>
+    <string name="voicemail_from_column">"Voicemail mula sa/kay "</string>
+</resources>

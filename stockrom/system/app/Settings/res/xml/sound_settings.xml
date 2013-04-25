@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sound_settings" android:key="sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.RingerVolumePreference android:persistent="false" android:title="@string/all_volume_title" android:key="ring_volume" android:dialogTitle="@string/all_volume_title" android:streamType="ring" />
+    <ListPreference android:entries="@array/silent_mode_entries" android:title="@string/silent_mode_title" android:key="silent_mode" android:entryValues="@array/silent_mode_values" />
+    <ListPreference android:entries="@array/volume_overlay_entries" android:title="@string/volume_overlay_title" android:key="volume_overlay" android:entryValues="@array/volume_overlay_values" />
+    <Preference android:title="@string/musicfx_title" android:key="musicfx">
+        <intent android:targetPackage="com.android.musicfx" android:targetClass="com.android.musicfx.ControlPanelPicker" />
+    </Preference>
+    <PreferenceScreen android:title="@string/quiet_hours_title" android:key="quiet_hours" android:fragment="com.android.settings.cyanogenmod.QuietHours" />
+    <CheckBoxPreference android:title="@string/safe_headset_restore_title" android:key="safe_headset_restore" android:summary="@string/safe_headset_restore_summary" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/sound_category_call_ringtone_vibrate_title" android:key="category_calls_and_notification" />
+    <com.android.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="ringtone" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/vibrate_when_ringing_title" android:key="vibrate_when_ringing" />
+    <com.android.settings.IncreasingRingPreference android:persistent="false" android:title="@string/increasing_ring_title" android:key="increasing_ring" android:dialogTitle="@string/increasing_ring_title" android:streamType="ring" />
+    <PreferenceCategory android:title="@string/sound_category_system_title" />
+    <com.android.settings.DefaultRingtonePreference android:persistent="false" android:title="@string/notification_sound_title" android:key="notification_sound" android:dialogTitle="@string/notification_sound_dialog_title" android:ringtoneType="notification" />
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/volbtn_music_controls_title" android:key="volbtn_music_controls" android:summary="@string/volbtn_music_controls_summary" />
+    <ListPreference android:entries="@array/emergency_tone_entries" android:title="@string/emergency_tone_title" android:key="emergency_tone" android:entryValues="@array/emergency_tone_values" />
+</PreferenceScreen>

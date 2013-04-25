@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Nsongs">
+        <item quantity="other">%d canzoni</item>
+        <item quantity="one">Una canzone</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="other">%d canzoni aggiunte alla playlist</item>
+        <item quantity="one">Una canzone aggiunta alla playlist</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="other">%d album</item>
+        <item quantity="one">Un album</item>
+    </plurals>
+</resources>

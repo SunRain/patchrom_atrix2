@@ -1,0 +1,8 @@
+
+ro.secure=0
+ro.allow.mock.location=1
+ro.debuggable=1
+
+
+# Forbid format of these partitions in mount menu (use only rm -r)
+ro.cwm.forbid_format=/misc,/radio,/boot,/recovery,/pds,/system,/data,/sd-ext

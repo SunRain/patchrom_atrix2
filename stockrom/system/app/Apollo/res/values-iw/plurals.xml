@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Nsongs">
+        <item quantity="other">%d שירים</item>
+        <item quantity="one">שיר 1</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="other">%d שירים נוספו לרשימת השמעה.</item>
+        <item quantity="one">שיר 1 נוסף לרשימת השמעה</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="other">%d אלבומים</item>
+        <item quantity="one">אלבום 1</item>
+    </plurals>
+</resources>

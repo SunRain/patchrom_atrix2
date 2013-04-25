@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_enable" android:key="enable_weather" android:summary="@string/weather_source" />
+    <ListPreference android:persistent="false" android:entries="@array/weather_interval_entries" android:title="@string/weather_refresh_interval" android:key="refresh_interval" android:dependency="enable_weather" android:entryValues="@array/weather_interval_values" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_use_custom_location" android:key="use_custom_location" android:dependency="enable_weather" />
+    <EditTextPreference android:persistent="false" android:hint="@string/weather_custom_location_hint" android:title="@string/weather_custom_location_title" android:key="custom_location" android:dependency="use_custom_location" android:dialogTitle="@string/weather_custom_location_dialog_title" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_use_metric" android:key="use_metric" android:dependency="enable_weather" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_show_location_title" android:key="show_location" android:dependency="enable_weather" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_show_timestamp_title" android:key="show_timestamp" android:dependency="enable_weather" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/weather_invert_lowhigh" android:key="invert_lowhigh" android:dependency="enable_weather" />
+</PreferenceScreen>

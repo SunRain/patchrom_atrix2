@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedUserLabel">Applicazioni di base Android</string>
+    <string name="app_label">Archiviazione contatti</string>
+    <string name="provider_label">Contatti</string>
+    <string name="upgrade_msg">Upgrade del database dei contatti.</string>
+    <string name="upgrade_out_of_memory_notification_ticker">"L'upgrade dei contatti richiede più memoria."</string>
+    <string name="upgrade_out_of_memory_notification_title">"Upgrade dell'archivio dei contatti"</string>
+    <string name="upgrade_out_of_memory_notification_text">"Tocca per completare l'upgrade."</string>
+    <string name="default_directory">Contatti</string>
+    <string name="local_invisible_directory">Altro</string>
+    <string name="read_write_all_voicemail_label">Accesso a tutti i messaggi vocali</string>
+    <string name="read_write_all_voicemail_description">"Consente all'applicazione di archiviare recuperare tutti i messaggi vocali a cui questo dispositivo può accedere."</string>
+    <string name="voicemail_from_column">"Messaggio vocale da "</string>
+</resources>

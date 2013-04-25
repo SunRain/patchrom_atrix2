@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Nsongs">
+        <item quantity="other">%d kappaletta</item>
+        <item quantity="one">1 kappale</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="other">%d kappaletta lisätty soittolistalle.</item>
+        <item quantity="one">1 kappale lisätty soittolistalle</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="other">%d albumia</item>
+        <item quantity="one">1 albumi</item>
+    </plurals>
+</resources>
