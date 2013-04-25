@@ -5,3 +5,4 @@ bak/
 test/
 stockrom.zip
 .delete-zip-file-when-clean
+*.pyc
