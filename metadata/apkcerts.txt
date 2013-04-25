@@ -172,7 +172,7 @@ name="Talk.apk" certificate="PRESIGNED" private_key=""
 name="Gmail.apk" certificate="PRESIGNED" private_key=""
 name="talkback.apk" certificate="PRESIGNED" private_key=""
 name="SetupWizard.apk" certificate="PRESIGNED" private_key=""
-name="GoogleFeedback.apk" certificate="PRESIGNED" private_key=""s
+name="GoogleFeedback.apk" certificate="PRESIGNED" private_key=""
 name="MediaUploader.apk" certificate="PRESIGNED" private_key=""
 name="GmsCore.apk" certificate="PRESIGNED" private_key=""
 name="GoogleTTS.apk" certificate="PRESIGNED" private_key=""
